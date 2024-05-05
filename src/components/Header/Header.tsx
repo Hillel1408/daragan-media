@@ -1,4 +1,4 @@
-import { Socials, Contacts, Button } from "components";
+import { Socials, Contacts, Button, Switcher } from "components";
 
 export default function Header() {
     return (
@@ -8,6 +8,7 @@ export default function Header() {
                     <img src="images/logo.svg" alt="" />
                     <span className="translate-y-[1px]">DARAGAN-MEDIA</span>
                 </div>
+                <Switcher text="тёмная тема" />
                 <Contacts className="gap-[50px]" />
                 <Socials />
                 <Button text="Заказать обратный звонок" className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112]" />
