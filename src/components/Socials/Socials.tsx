@@ -2,7 +2,7 @@ export default function Socials() {
     return (
         <ul className="flex items-center gap-4">
             <li>
-                <a href="#">
+                <a href="tg://resolve?domain=Hillel1408">
                     <svg width="18" height="15">
                         <path
                             opacity="0.5"
@@ -13,7 +13,7 @@ export default function Socials() {
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.fl.ru/users/balzary/portfolio/" target="blanck">
                     <svg width="18" height="15">
                         <path
                             opacity="0.5"
