@@ -4,7 +4,7 @@ export default function Layout({ children }: { children: JSX.Element }) {
     return (
         <>
             <Header />
-            <main className="container flex flex-col">{children}</main>
+            <main className="flex flex-col">{children}</main>
             <Footer />
         </>
     );

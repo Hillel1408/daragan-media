@@ -1,9 +1,9 @@
-import Layout from "components/Layout/Layout";
+import { Layout, MyWorks } from "components";
 
 export default function Main() {
     return (
         <Layout>
-            <div></div>
+            <MyWorks />
         </Layout>
     );
 }
