@@ -1,13 +1,10 @@
-import { Socials, Contacts, Button, Switcher } from "components";
+import { Socials, Contacts, Button, Switcher, Logo } from "components";
 
 export default function Header() {
     return (
         <div className="py-[30px] bg-[#111112]">
             <div className="container flex justify-between items-center">
-                <div className="flex items-center gap-1 text-white font-['Intro'] text-[14px]">
-                    <img src="images/logo.svg" alt="" />
-                    <span className="translate-y-[1px]">DARAGAN-MEDIA</span>
-                </div>
+                <Logo />
                 <Switcher text="тёмная тема" />
                 <Contacts className="gap-[50px]" />
                 <Socials />
