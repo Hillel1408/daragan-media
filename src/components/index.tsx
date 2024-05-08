@@ -10,5 +10,6 @@ import MyWorks from "components/MyWorks/MyWorks";
 import Tabs from "components/Tabs/Tabs";
 import LandingPage from "components/LandingPage/LandingPage";
 import Technologies from "components/Technologies/Technologies";
+import Project from "components/Project/Project";
 
-export { Header, Layout, Footer, Socials, Contacts, Button, Switcher, Logo, MyWorks, Tabs, LandingPage, Technologies };
+export { Header, Layout, Footer, Socials, Contacts, Button, Switcher, Logo, MyWorks, Tabs, LandingPage, Technologies, Project };
