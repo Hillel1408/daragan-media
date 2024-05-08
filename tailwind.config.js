@@ -31,6 +31,9 @@ module.exports = {
                     margin: "0 auto",
                     padding: "0 28px",
                 },
+                ".bg-tab": {
+                    background: "linear-gradient(90.79deg, #6E46E5 0.68%, #194EC4 61.75%, rgba(28, 249, 239, 0.9) 134.9%)",
+                },
                 ".bg-button": {
                     background: "linear-gradient(90deg, #6E46E5 0%, #194EC4 48.5%, #00DBE2 100%)",
                 },

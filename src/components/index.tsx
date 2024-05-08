@@ -8,5 +8,7 @@ import Switcher from "components/Switcher/Switcher";
 import Logo from "components/Logo/Logo";
 import MyWorks from "components/MyWorks/MyWorks";
 import Tabs from "components/Tabs/Tabs";
+import LandingPage from "components/LandingPage/LandingPage";
+import Technologies from "components/Technologies/Technologies";
 
-export { Header, Layout, Footer, Socials, Contacts, Button, Switcher, Logo, MyWorks, Tabs };
+export { Header, Layout, Footer, Socials, Contacts, Button, Switcher, Logo, MyWorks, Tabs, LandingPage, Technologies };
