@@ -2,7 +2,7 @@ import { Logo, Socials, Contacts } from "components";
 
 export default function Footer() {
     return (
-        <div className="pt-[65px] pb-[100px] bg-[#111112]">
+        <div className="pt-[65px] pb-[100px] bg-[#18181A]">
             <div className="container">
                 <Logo />
                 <div className="mt-10 flex justify-between items-start gap-5">

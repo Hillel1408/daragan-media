@@ -37,8 +37,14 @@ module.exports = {
                 ".bg-button": {
                     background: "linear-gradient(90deg, #6E46E5 0%, #194EC4 48.5%, #00DBE2 100%)",
                 },
+                ".bg-button-2": {
+                    background: "linear-gradient(110deg, #6e46e5 0%, #194ec4 45.5%, rgba(28, 249, 239, 0.9) 100%)",
+                },
                 ".bg-switcher": {
                     background: "linear-gradient(270deg, #494949 29.28%, #5A5A5A 78.75%)",
+                },
+                ".my-blur": {
+                    backdropFilter: "blur(102.50411987304688px)",
                 },
             });
         }),

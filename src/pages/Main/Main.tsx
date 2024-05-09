@@ -1,9 +1,12 @@
-import { Layout, MyWorks } from "components";
+import { Layout, MyWorks, Feedback } from "components";
 
 export default function Main() {
     return (
         <Layout>
-            <MyWorks />
+            <>
+                <MyWorks />
+                <Feedback />
+            </>
         </Layout>
     );
 }
