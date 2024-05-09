@@ -7,11 +7,11 @@ export default function Footer() {
                 <Logo />
                 <div className="mt-10 flex justify-between items-start gap-5">
                     <Contacts className="gap-4 flex-col" />
-                    <ul className="text-[18px] leading-[29px] opacity-70 text-white">
+                    <ul className="text-[18px] leading-[29px] opacity-70 text-white -translate-y-[6.5px]">
                         <li>ИП Дараган Максим Александрович</li>
                         <li>Завяки принимаются 7/24/365</li>
                     </ul>
-                    <ul className="text-[18px] leading-[29px] opacity-70 text-white">
+                    <ul className="text-[18px] leading-[29px] opacity-70 text-white -translate-y-[6.5px]">
                         <li>ОГРНИП: 315312300009831</li>
                         <li>ИНН: 312335235806</li>
                     </ul>

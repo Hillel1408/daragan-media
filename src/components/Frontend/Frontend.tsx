@@ -2,21 +2,49 @@ import { Technologies, Project } from "components";
 
 export default function Frontend() {
     const list = [
-        { icon: "React.svg", text: "React", width: "", height: "" },
-        { icon: "NextJS.svg", text: "NextJS", width: "", height: "" },
-        { icon: "TypeScript.svg", text: "TypeScript", width: "", height: "" },
-        { icon: "ReduxToolkit.svg", text: "Redux Toolkit", width: "", height: "" },
-        { icon: "ReactHookForm.svg", text: "React Hook Form", width: "", height: "" },
-        { icon: "ESLint.svg", text: "ESLint", width: "", height: "" },
-        { icon: "Prettier.svg", text: "Prettier", width: "", height: "" },
-        { icon: "ReactSpring.svg", text: "React Spring", width: "", height: "" },
-        { icon: "RTKQuery.svg", text: "RTK Query", width: "", height: "" },
+        { icon: "React.svg", text: "React", width: "40", height: "36" },
+        { icon: "NextJS.svg", text: "NextJS", width: "36", height: "36" },
+        { icon: "TypeScript.svg", text: "TypeScript", width: "36", height: "36" },
+        { icon: "ReduxToolkit.svg", text: "Redux Toolkit", width: "37", height: "36" },
+        { icon: "ReactHookForm.svg", text: "React Hook Form", width: "36", height: "36" },
+        { icon: "ESLint.svg", text: "ESLint", width: "40", height: "36" },
+        { icon: "Prettier.svg", text: "Prettier", width: "36", height: "36" },
+        { icon: "ReactSpring.svg", text: "React Spring", width: "36", height: "36" },
+        { icon: "RTKQuery.svg", text: "RTK Query", width: "37", height: "36" },
+    ];
+
+    const projects = [
+        {
+            img: "img-21.png",
+            imgHover: "img-22.png",
+            title: "Интерактивный курс",
+            text: "Интерактивный курс для Газпрома на React",
+            href: "https://movmedia.vercel.app/",
+        },
+        {
+            img: "img-23.png",
+            imgHover: "img-24.png",
+            title: "Пятнашки",
+            text: "Игра Пятнашки для Ростелекома на React",
+            href: "https://barley-break-one.vercel.app/",
+        },
+        {
+            img: "img-25.png",
+            imgHover: "img-26.png",
+            title: "FIXrolls",
+            text: "Приложение по доставке суши на React",
+            href: "https://fixrolls.vercel.app/",
+        },
     ];
 
     return (
         <div className="flex flex-col gap-[70px]">
             <Technologies text="Валидная, кроссбраузерная верстка" list={list}></Technologies>
-            <div className="grid gap-[66px] grid-cols-3"></div>
+            <div className="grid gap-[66px] grid-cols-3">
+                {projects.map((item, index) => (
+                    <Project key={index} item={item} />
+                ))}
+            </div>
         </div>
     );
 }
