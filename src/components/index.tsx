@@ -15,6 +15,7 @@ import Frontend from "components/Frontend/Frontend";
 import Website from "components/Website/Website";
 import Feedback from "components/Feedback/Feedback";
 import SecondaryButton from "components/SecondaryButton/SecondaryButton";
+import Intro from "components/Intro/Intro";
 
 export {
     Header,
@@ -34,4 +35,5 @@ export {
     Website,
     Feedback,
     SecondaryButton,
+    Intro,
 };
