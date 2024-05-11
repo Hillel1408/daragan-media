@@ -9,3 +9,8 @@
     background-repeat: no-repeat;
     background-position: calc(100vw / 2 - 80px) 70px;
 }
+.bg-about-me {
+    background-image: url("../public/images/bg-4.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100vw / 2 - 636px) 36px;
+}

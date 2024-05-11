@@ -22,7 +22,14 @@ export default function Website() {
             imgHover: "img-20.png",
             title: "Стома-Денталь",
             text: "Адаптивная верстка сайта Стома-Денталь",
-            href: "https://daragan-media.com/verstka/pwb-new/",
+            href: "https://hillel1408.github.io/stoma_dent/",
+        },
+        {
+            img: "img-29.png",
+            imgHover: "img-30.png",
+            title: "Ваш ритуал",
+            text: "Адаптивная верстка сайта Ваш ритуал",
+            href: "#",
         },
     ];
 

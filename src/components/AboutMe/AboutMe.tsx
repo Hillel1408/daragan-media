@@ -11,7 +11,11 @@ export default function AboutMe() {
                     <p>Моя цель — узнать бизнес и придумать идеальный способ рассказать о нем аудитории.</p>
                 </div>
             </div>
-            <div className="border border-[#2b2b2d] border-l-0 border-r-0 mt-[100px] pt-[55px] pb-[38px] bg-[rgba(35,38,57,0.1)] my-blur">
+            <div
+                className="bg-about-me border border-[#2b2b2d] border-l-0 border-r-0 mt-[100px] pt-[55px] pb-[38px] bg-[rgba(35,38,57,0.1)] my-blur before:content-['']
+                before:block before:h-[100px] before:w-[100%] before:border-[2px] before:border-white before:rounded-bl-[24px] relative before:border-r-0
+                before:border-t-0 before:absolute before:-bottom-[42.3px] before:left-[calc(100vw/2-364px)]"
+            >
                 <div className="container">
                     <div className="max-w-[545px] ml-auto">
                         <h2 className="text-[32px] uppercase text-white font-['Intro'] mb-[32px]">как я работаю?</h2>
