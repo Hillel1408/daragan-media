@@ -16,6 +16,7 @@ import Website from "components/Website/Website";
 import Feedback from "components/Feedback/Feedback";
 import SecondaryButton from "components/SecondaryButton/SecondaryButton";
 import Intro from "components/Intro/Intro";
+import AboutMe from "components/AboutMe/AboutMe";
 
 export {
     Header,
@@ -36,4 +37,5 @@ export {
     Feedback,
     SecondaryButton,
     Intro,
+    AboutMe,
 };
