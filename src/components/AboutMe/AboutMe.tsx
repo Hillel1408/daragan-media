@@ -1,6 +1,6 @@
 export default function AboutMe() {
     return (
-        <div className="bg-[#111112] pb-[145px]">
+        <div className="bg-[#111112] pb-[145px] overflow-hidden">
             <div className="container">
                 <h2 className="font-['Intro'] text-[32px] leading-[32px] text-white text-center mb-8">ПАРА СТРОК ОБО МНЕ</h2>
                 <div className="max-w-[1080px] text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] text-center">
