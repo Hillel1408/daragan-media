@@ -1,4 +1,4 @@
-import { Layout, MyWorks, Feedback, Intro, AboutMe } from "components";
+import { Layout, MyWorks, Feedback, Intro, AboutMe, Reviews } from "components";
 
 export default function Main() {
     return (
@@ -6,6 +6,7 @@ export default function Main() {
             <>
                 <Intro />
                 <MyWorks />
+                <Reviews />
                 <Feedback />
                 <AboutMe />
             </>

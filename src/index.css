@@ -14,3 +14,9 @@
     background-repeat: no-repeat;
     background-position: calc(100vw / 2 - 636px) 36px;
 }
+.bg-text {
+    background: linear-gradient(205deg, #420dbd 63%, #6e46e5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

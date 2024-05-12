@@ -17,6 +17,7 @@ import Feedback from "components/Feedback/Feedback";
 import SecondaryButton from "components/SecondaryButton/SecondaryButton";
 import Intro from "components/Intro/Intro";
 import AboutMe from "components/AboutMe/AboutMe";
+import Reviews from "components/Reviews/Reviews";
 
 export {
     Header,
@@ -38,4 +39,5 @@ export {
     SecondaryButton,
     Intro,
     AboutMe,
+    Reviews,
 };
