@@ -2,7 +2,11 @@ import { SecondaryButton, Button } from "components";
 
 export default function Reviews() {
     return (
-        <div className="bg-[#111112] pb-[100px] pt-[36px] grid grid-cols-[1.07fr_0.93fr]">
+        <div
+            className="relative bg-[#111112] pb-[100px] pt-[36px] grid grid-cols-[1.07fr_0.93fr] before:content-[''] before:block before:h-[77px]
+            before:w-[100%] before:border-[2px] before:border-white before:rounded-tr-[24px] before:border-l-0 before:border-b-0 before:absolute
+            before:top-[3.7px] before:right-[calc(100vw/2-200px)] before:z-20"
+        >
             <div className="pl-[calc(100vw/2-560px)] py-20">
                 <span className="bg-text font-['Intro'] text-[64px] uppercase">30+</span>
                 <h2 className="text-[32px] font-['Intro'] uppercase text-white mt-[11px] mb-[28px]">положительных отзывов</h2>
