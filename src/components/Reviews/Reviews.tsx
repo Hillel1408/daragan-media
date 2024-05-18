@@ -2,18 +2,30 @@ import { SecondaryButton, Button } from "components";
 
 export default function Reviews() {
     return (
-        <div className="bg-[#111112] pb-[100px] pt-[36px]">
-            <div className="pl-[calc(100vw/2-560px)]">
+        <div className="bg-[#111112] pb-[100px] pt-[36px] grid grid-cols-[1.07fr_0.93fr]">
+            <div className="pl-[calc(100vw/2-560px)] py-20">
                 <span className="bg-text font-['Intro'] text-[64px] uppercase">30+</span>
                 <h2 className="text-[32px] font-['Intro'] uppercase text-white mt-[11px] mb-[28px]">положительных отзывов</h2>
                 <p className="max-w-[386px] text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)]">
                     Ознакомиться с отзывами можно на сайтах <span className="text-white">fl.ru и freelance.habr.com</span>
                 </p>
                 <div className="mt-[46px] grid grid-cols-[195px_294px] gap-[15px]">
-                    <SecondaryButton text="Отзывы на fl.ru" />
-                    <Button text="Отзывы на freelance.habr.com" className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112]" />
+                    <SecondaryButton
+                        text="Отзывы на fl.ru"
+                        onClick={() => {
+                            window.open("https://www.fl.ru/users/balzary/opinions/?sort=1&period=&author=0#op_head", "_blank");
+                        }}
+                    />
+                    <Button
+                        text="Отзывы на freelance.habr.com"
+                        className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112]"
+                        onClick={() => {
+                            window.open("https://freelance.habr.com/freelancers/hillel1408/opinions", "_blank");
+                        }}
+                    />
                 </div>
             </div>
+            <div className="bg-reviews bg-[rgba(35,38,57,0.1)] my-blur border border-[#2b2b2d] rounded-l-[24px] border-r-0"></div>
         </div>
     );
 }

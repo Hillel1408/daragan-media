@@ -20,3 +20,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.bg-reviews {
+    background-image: url("../public/images/bg-5.svg");
+    background-repeat: no-repeat;
+    background-position: 50px center;
+}
