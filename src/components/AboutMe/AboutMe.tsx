@@ -26,24 +26,28 @@ export default function AboutMe() {
                 <div className="container">
                     <div className="max-w-[545px] ml-auto">
                         <Observer>
-                            <>
-                                <h2 className="text-[32px] uppercase text-white font-['Intro'] mb-[32px]">как я работаю?</h2>
-                                <ul className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] flex flex-col gap-[22px] [&>li>span]:text-white [&>li>span]:font-bold">
-                                    <li>
-                                        <span>Честно и прозрачно.</span> Разрабатываю план проекта, рассказываю о каждом этапе и объясняю, для чего он нужен,
-                                        согласовываю прототипы и дизайн-концепции.
-                                    </li>
-                                    <li>
-                                        <span>Вдумчиво.</span> Я не гонюсь за количеством и одновременно веду не более 3 крупных проектов — у меня всегда
-                                        достаточно ресурсов на каждого клиента.
-                                    </li>
-                                    <li>
-                                        <span>Профессионально.</span> Знаю и применяю современные инструменты проектирования, дизайна и продвижения, постоянно
-                                        учусь и повышаю квалификацию.
-                                    </li>
-                                </ul>
-                            </>
+                            <h2 className="text-[32px] uppercase text-white font-['Intro'] mb-[32px]">как я работаю?</h2>
                         </Observer>
+                        <ul className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] flex flex-col gap-[22px] [&>li>span]:text-white [&>li>span]:font-bold">
+                            <Observer>
+                                <li>
+                                    <span>Честно и прозрачно.</span> Разрабатываю план проекта, рассказываю о каждом этапе и объясняю, для чего он нужен,
+                                    согласовываю прототипы и дизайн-концепции.
+                                </li>
+                            </Observer>
+                            <Observer>
+                                <li>
+                                    <span>Вдумчиво.</span> Я не гонюсь за количеством и одновременно веду не более 3 крупных проектов — у меня всегда достаточно
+                                    ресурсов на каждого клиента.
+                                </li>
+                            </Observer>
+                            <Observer>
+                                <li>
+                                    <span>Профессионально.</span> Знаю и применяю современные инструменты проектирования, дизайна и продвижения, постоянно учусь
+                                    и повышаю квалификацию.
+                                </li>
+                            </Observer>
+                        </ul>
                     </div>
                 </div>
             </div>
