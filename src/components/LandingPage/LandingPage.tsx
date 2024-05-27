@@ -1,4 +1,4 @@
-import { Technologies, Project } from "components";
+import { Technologies, Project, Observer } from "components";
 import { landingPageList } from "constants/";
 
 export default function LandingPage() {
@@ -59,7 +59,9 @@ export default function LandingPage() {
             <Technologies text="Валидная, кроссбраузерная верстка" list={landingPageList}></Technologies>
             <div className="grid gap-[66px] grid-cols-3">
                 {projects.map((item, index) => (
-                    <Project key={index} item={item} />
+                    <Observer key={index}>
+                        <Project item={item} />
+                    </Observer>
                 ))}
             </div>
         </div>

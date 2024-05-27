@@ -18,6 +18,7 @@ import SecondaryButton from "components/SecondaryButton/SecondaryButton";
 import Intro from "components/Intro/Intro";
 import AboutMe from "components/AboutMe/AboutMe";
 import Reviews from "components/Reviews/Reviews";
+import Observer from "components/Observer/Observer";
 
 export {
     Header,
@@ -40,4 +41,5 @@ export {
     Intro,
     AboutMe,
     Reviews,
+    Observer,
 };

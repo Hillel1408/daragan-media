@@ -1,4 +1,4 @@
-import { Technologies, Project } from "components";
+import { Technologies, Project, Observer } from "components";
 import { landingPageList } from "constants/";
 
 export default function Website() {
@@ -29,7 +29,7 @@ export default function Website() {
             imgHover: "img-30.png",
             title: "Ваш ритуал",
             text: "Адаптивная верстка сайта Ваш ритуал",
-            href: "#",
+            href: "https://hillel1408.github.io/your-ritual/",
         },
     ];
 
@@ -38,7 +38,9 @@ export default function Website() {
             <Technologies text="Валидная, кроссбраузерная верстка" list={landingPageList}></Technologies>
             <div className="grid gap-[66px] grid-cols-3">
                 {projects.map((item, index) => (
-                    <Project key={index} item={item} />
+                    <Observer key={index}>
+                        <Project item={item} />
+                    </Observer>
                 ))}
             </div>
         </div>

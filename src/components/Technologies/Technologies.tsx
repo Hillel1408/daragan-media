@@ -1,3 +1,5 @@
+import { Observer } from "components";
+
 export default function Technologies({ text, list }: { text: string; list: { text: string; icon: string; width: string; height: string }[] }) {
     return (
         <div className="border border-[#2b2b2d] rounded-[37px] py-[43px] px-[35px] bg-[rgba(35,38,57,0.1)]">
