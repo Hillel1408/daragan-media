@@ -19,7 +19,7 @@ export default function AboutMe() {
                 </Observer>
             </div>
             <div
-                className="bg-about-me border border-[#2b2b2d] border-l-0 border-r-0 mt-[100px] pt-[55px] pb-[38px] bg-[rgba(35,38,57,0.1)] my-blur before:content-['']
+                className="bg-about-me border border-[#2b2b2d] border-l-0 border-r-0 mt-[100px] pt-[55px] pb-[38px] bg-[rgba(35,38,57,0.1)] before:content-['']
                 before:block before:h-[100px] before:w-[100%] before:border-[2px] before:border-white before:rounded-bl-[24px] relative before:border-r-0
                 before:border-t-0 before:absolute before:-bottom-[42.3px] before:left-[calc(100vw/2-364px)]"
             >

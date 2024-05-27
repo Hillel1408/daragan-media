@@ -33,7 +33,7 @@ export default function Reviews() {
                     </>
                 </Observer>
             </div>
-            <div className="bg-reviews bg-[rgba(35,38,57,0.1)] my-blur border border-[#2b2b2d] rounded-l-[24px] border-r-0"></div>
+            <div className="bg-reviews bg-[rgba(35,38,57,0.1)] border border-[#2b2b2d] rounded-l-[24px] border-r-0"></div>
         </div>
     );
 }

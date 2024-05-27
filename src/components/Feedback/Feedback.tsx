@@ -5,7 +5,7 @@ export default function Feedback() {
         <div className="bg-[#111112] pb-[100px]">
             <div className="container">
                 <div className="relative overflow-hidden">
-                    <div className="my-blur border border-white rounded-[37px] bg-[rgba(35,38,57,0.1)] py-20 px-[103px] z-10 relative">
+                    <div className="border border-white rounded-[37px] bg-[rgba(35,38,57,0.1)] py-20 px-[103px] z-10 relative">
                         <h2 className="font-['Intro'] text-[32px] uppercase text-white text-center mb-[10px]">хотите обсудить проект?</h2>
                         <p className="text-[18px] leading-[161%] text-center text-white mb-[56px]">
                             Оставьте свои контактные данные и я перезвоню вам в самое ближайшее время
@@ -26,7 +26,7 @@ export default function Feedback() {
                             <SecondaryButton text="Отправить" />
                         </div>
                     </div>
-                    <img src="images/bg-1.svg" width="343" height="270" alt="" className="absolute top-[30px] left-[74px]" />
+                    <img src="images/bg-1.svg" width="343" height="270" alt="" className="my-blur absolute top-[30px] left-[74px]" />
                 </div>
             </div>
         </div>
