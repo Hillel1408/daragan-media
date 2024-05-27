@@ -18,7 +18,7 @@ export default function Observer({ children, className }: { children: JSX.Elemen
 
     return (
         <div className="overflow-hidden">
-            <div ref={myRef} className={classNames("duration-1000 translate-y-[100%]", className)}>
+            <div ref={myRef} className={classNames("duration-[1300ms] translate-y-[100%]", className)}>
                 {children}
             </div>
         </div>
