@@ -19,6 +19,7 @@ import Intro from "components/Intro/Intro";
 import AboutMe from "components/AboutMe/AboutMe";
 import Reviews from "components/Reviews/Reviews";
 import Observer from "components/Observer/Observer";
+import Diplomas from "components/Diplomas/Diplomas";
 
 export {
     Header,
@@ -42,4 +43,5 @@ export {
     AboutMe,
     Reviews,
     Observer,
+    Diplomas,
 };
