@@ -5,17 +5,17 @@ export default function AboutMe() {
         <div className="bg-[#111112] pb-[145px] overflow-hidden">
             <div className="container">
                 <Observer>
-                    <>
-                        <h2 className="font-['Intro'] text-[32px] leading-[32px] text-white text-center mb-8">ПАРА СТРОК ОБО МНЕ</h2>
-                        <div className="max-w-[1080px] text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] text-center">
-                            <p className="mb-6">
-                                Привет! Я <span className="text-white font-bold">Дараган Максим</span>, программист из Санкт-Петербурга. С 2017 года я создаю
-                                сайты, которые раскрыввают характер бизнеса и помогаем привлекать новых клиентов и партнеров с помощью контекстной и
-                                таргетированной рекламы.
-                            </p>
-                            <p>Моя цель — узнать бизнес и придумать идеальный способ рассказать о нем аудитории.</p>
-                        </div>
-                    </>
+                    <h2 className="font-['Intro'] text-[32px] leading-[32px] text-white text-center mb-8">ПАРА СТРОК ОБО МНЕ</h2>
+                </Observer>
+                <Observer>
+                    <div className="max-w-[1080px] text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] text-center">
+                        <p className="mb-6">
+                            Привет! Я <span className="text-white font-bold">Дараган Максим</span>, программист из Санкт-Петербурга. С 2017 года я создаю сайты,
+                            которые раскрыввают характер бизнеса и помогаем привлекать новых клиентов и партнеров с помощью контекстной и таргетированной
+                            рекламы.
+                        </p>
+                        <p>Моя цель — узнать бизнес и придумать идеальный способ рассказать о нем аудитории.</p>
+                    </div>
                 </Observer>
             </div>
             <div
