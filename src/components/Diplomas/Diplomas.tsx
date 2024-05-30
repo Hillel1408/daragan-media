@@ -15,6 +15,9 @@ export default function Diplomas() {
         slideChanged(slider) {
             setCurrentSlide(slider.track.details.rel);
         },
+        animationEnded(slider) {
+            slider.update();
+        },
     });
 
     const sert = [{ url: "sert-1.webp" }, { url: "sert-2.webp" }, { url: "sert-3.webp" }, { url: "sert-4.webp" }];
@@ -63,9 +66,14 @@ export default function Diplomas() {
                         <div className="rounded-bl-[24px] border-b-[2px] border-l-[2px] pb-11"></div>
                     </div>
                 </div>
-                <div ref={sliderRef} className="keen-slider items-end max-w-[686px] overflow-hidden">
+                <div ref={sliderRef} className="keen-slider items-end snap-start max-w-[686px] overflow-hidden">
                     {sert.map((item, index) => (
-                        <div key={index} className={classNames("keen-slider__slide !w-[159px] !h-[225px] !min-h-[initial]")}>
+                        <div
+                            key={index}
+                            className={classNames("keen-slider__slide !w-[159px] !h-[225px] !min-w-[159px] !min-h-[225px]", {
+                                "!w-[345px] !h-[446px] !min-w-[345px] !min-h-[446px]": index === currentSlide,
+                            })}
+                        >
                             <img src={`images/${item.url}`} alt="" className="object-cover w-full h-full" />
                         </div>
                     ))}
