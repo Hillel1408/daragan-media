@@ -17,10 +17,6 @@ export default function Diplomas() {
         },
     });
 
-    useEffect(() => {
-        console.log();
-    }, [currentSlide]);
-
     const sert = [{ url: "sert-1.webp" }, { url: "sert-2.webp" }, { url: "sert-3.webp" }, { url: "sert-4.webp" }];
 
     return (
