@@ -42,3 +42,13 @@
 .my-blur {
     filter: blur(102.50411987304688px);
 }
+.swiper-slide-active {
+    min-width: 345px;
+    height: 446px !important;
+}
+.swiper-slide-active > div > div {
+    background-color: initial;
+}
+.swiper-wrapper {
+    align-items: flex-end;
+}

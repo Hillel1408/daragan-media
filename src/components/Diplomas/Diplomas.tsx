@@ -1,21 +1,11 @@
-import { useEffect, useState } from "react";
-import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react";
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperCore } from "swiper/types";
 import classNames from "classnames";
+import "swiper/css";
 
 export default function Diplomas() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-
-    const [sliderRef, instanceRef] = useKeenSlider({
-        loop: true,
-        slides: {
-            perView: "auto",
-            spacing: 35,
-        },
-        slideChanged(slider) {
-            setCurrentSlide(slider.track.details.rel);
-        },
-    });
+    const swiperRef = useRef<SwiperCore>();
 
     const sert = [{ url: "sert-1.webp" }, { url: "sert-2.webp" }, { url: "sert-3.webp" }, { url: "sert-4.webp" }];
 
@@ -28,7 +18,7 @@ export default function Diplomas() {
                             ДИПЛОМЫ <br /> и СЕРТИФИКАТЫ
                         </h2>
                         <div className="flex gap-5 mt-[26px]">
-                            <button className="group" onClick={(e: any) => e.stopPropagation() || instanceRef.current?.prev()}>
+                            <button className="group" onClick={() => swiperRef.current?.slidePrev()}>
                                 <svg width="80" height="16" viewBox="0 0 80 16">
                                     <path
                                         opacity="0.4"
@@ -38,7 +28,7 @@ export default function Diplomas() {
                                     />
                                 </svg>
                             </button>
-                            <button className="group rotate-180" onClick={(e: any) => e.stopPropagation() || instanceRef.current?.next()}>
+                            <button className="next group rotate-180" onClick={() => swiperRef.current?.slideNext()}>
                                 <svg width="80" height="16" viewBox="0 0 80 16">
                                     <path
                                         opacity="0.4"
@@ -52,7 +42,7 @@ export default function Diplomas() {
                     </div>
                     <div>
                         <p className="flex gap-1 items-end">
-                            <span className="text-[32px] leading-[91%] text-white">{currentSlide + 1}</span>
+                            <span className="text-[32px] leading-[91%] text-white">{1}</span>
                             <span className="text-[20px] leading-[91%] text-[rgba(255,255,255,0.5)]">/</span>
                             <span className="text-[20px] leading-[91%] text-[rgba(255,255,255,0.5)]">{sert.length}</span>
                         </p>
@@ -63,12 +53,25 @@ export default function Diplomas() {
                         <div className="rounded-bl-[24px] border-b-[2px] border-l-[2px] pb-11"></div>
                     </div>
                 </div>
-                <div ref={sliderRef} className="keen-slider items-end snap-start max-w-[686px] overflow-hidden">
-                    {sert.map((item, index) => (
-                        <div key={index} className={classNames("keen-slider__slide !w-[159px] !h-[225px] !min-w-[159px] !min-h-[225px]")}>
-                            <img src={`images/${item.url}`} alt="" className="object-cover w-full h-full" />
-                        </div>
-                    ))}
+                <div className="items-end snap-start max-w-[686px] overflow-hidden">
+                    <Swiper
+                        onBeforeInit={(swiper: any) => {
+                            swiperRef.current = swiper;
+                        }}
+                        slidesPerView={3}
+                        loop
+                        spaceBetween={35}
+                        className="mySwiper"
+                    >
+                        {sert.map((item, index) => (
+                            <SwiperSlide>
+                                <div key={index} className={classNames("h-full relative")}>
+                                    <img src={`images/${item.url}`} alt="" className="object-cover w-full h-full" />
+                                    <div className="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.4)]"></div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
         </div>
