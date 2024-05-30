@@ -69,7 +69,7 @@ export default function Diplomas() {
                 </div>
                 <div ref={sliderRef} className="keen-slider items-end max-w-[686px] overflow-hidden">
                     {sert.map((item, index) => (
-                        <div className={classNames("keen-slider__slide !w-[159px] !h-[225px] !min-h-[initial]")}>
+                        <div key={index} className={classNames("keen-slider__slide !w-[159px] !h-[225px] !min-h-[initial]")}>
                             <img src={`images/${item.url}`} alt="" className="object-cover w-full h-full" />
                         </div>
                     ))}
