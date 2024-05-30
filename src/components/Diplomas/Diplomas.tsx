@@ -15,12 +15,13 @@ export default function Diplomas() {
         slideChanged(slider) {
             setCurrentSlide(slider.track.details.rel);
         },
-        animationEnded(slider) {
-            slider.update();
-        },
     });
 
     const sert = [{ url: "sert-1.webp" }, { url: "sert-2.webp" }, { url: "sert-3.webp" }, { url: "sert-4.webp" }];
+
+    useEffect(() => {
+        instanceRef.current?.update();
+    }, [currentSlide]);
 
     return (
         <div className="pb-[100px] bg-[#111112]">
