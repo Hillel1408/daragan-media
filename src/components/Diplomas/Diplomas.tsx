@@ -19,10 +19,6 @@ export default function Diplomas() {
 
     const sert = [{ url: "sert-1.webp" }, { url: "sert-2.webp" }, { url: "sert-3.webp" }, { url: "sert-4.webp" }];
 
-    useEffect(() => {
-        instanceRef.current?.update();
-    }, [currentSlide]);
-
     return (
         <div className="pb-[100px] bg-[#111112]">
             <div className="container grid grid-cols-[384px_1fr] gap-[50px]">
@@ -69,12 +65,7 @@ export default function Diplomas() {
                 </div>
                 <div ref={sliderRef} className="keen-slider items-end snap-start max-w-[686px] overflow-hidden">
                     {sert.map((item, index) => (
-                        <div
-                            key={index}
-                            className={classNames("keen-slider__slide !w-[159px] !h-[225px] !min-w-[159px] !min-h-[225px]", {
-                                "!w-[345px] !h-[446px] !min-w-[345px] !min-h-[446px]": index === currentSlide,
-                            })}
-                        >
+                        <div key={index} className={classNames("keen-slider__slide !w-[159px] !h-[225px] !min-w-[159px] !min-h-[225px]")}>
                             <img src={`images/${item.url}`} alt="" className="object-cover w-full h-full" />
                         </div>
                     ))}
