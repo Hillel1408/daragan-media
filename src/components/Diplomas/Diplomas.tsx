@@ -8,11 +8,12 @@ export default function Diplomas() {
     const [active, setActive] = useState(1);
     const swiperRef = useRef<SwiperCore>();
 
-    const sert = [{ url: "sert-1.webp" }, { url: "sert-2.webp" }, { url: "sert-3.webp" }, { url: "sert-4.webp" }];
-
-    useEffect(() => {
-        console.log();
-    }, [swiperRef]);
+    const sert = [
+        { url: "sert-1.webp", text1: "Сертификат Google ADS по поиску.", text2: "Обучался в Convert Monster." },
+        { url: "sert-2.webp", text1: "Стажировка Only-digital.", text2: "-" },
+        { url: "sert-3.webp", text1: "Сертификат фронтенд-разработчика.", text2: "Обучался в GeekBrains." },
+        { url: "sert-4.webp", text1: "Стажировка Hawkingbros", text2: "-" },
+    ];
 
     return (
         <div className="pb-[100px] bg-[#111112]">
@@ -52,8 +53,8 @@ export default function Diplomas() {
                             <span className="text-[20px] leading-[91%] text-[rgba(255,255,255,0.5)]">{sert.length}</span>
                         </p>
                         <p className="mt-[30px] pl-[30px] text-[20px] leading-[145%] flex flex-col">
-                            <span className="text-white">Сертификат Google ADS по поиску.</span>
-                            <span className="text-[rgba(255,255,255,0.7)]">Обучался в Convert Monster.</span>
+                            <span className="text-white">{sert[active].text1}</span>
+                            <span className="text-[rgba(255,255,255,0.7)]">{sert[active].text2}</span>
                         </p>
                         <div className="rounded-bl-[24px] border-b-[2px] border-l-[2px] pb-11"></div>
                     </div>
