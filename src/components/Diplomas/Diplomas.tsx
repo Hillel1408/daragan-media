@@ -1,13 +1,18 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
 import classNames from "classnames";
 import "swiper/css";
 
 export default function Diplomas() {
+    const [active, setActive] = useState(1);
     const swiperRef = useRef<SwiperCore>();
 
     const sert = [{ url: "sert-1.webp" }, { url: "sert-2.webp" }, { url: "sert-3.webp" }, { url: "sert-4.webp" }];
+
+    useEffect(() => {
+        console.log();
+    }, [swiperRef]);
 
     return (
         <div className="pb-[100px] bg-[#111112]">
@@ -42,7 +47,7 @@ export default function Diplomas() {
                     </div>
                     <div>
                         <p className="flex gap-1 items-end">
-                            <span className="text-[32px] leading-[91%] text-white">{1}</span>
+                            <span className="text-[32px] leading-[91%] text-white">{active + 1}</span>
                             <span className="text-[20px] leading-[91%] text-[rgba(255,255,255,0.5)]">/</span>
                             <span className="text-[20px] leading-[91%] text-[rgba(255,255,255,0.5)]">{sert.length}</span>
                         </p>
@@ -55,8 +60,11 @@ export default function Diplomas() {
                 </div>
                 <div className="items-end snap-start max-w-[686px] overflow-hidden">
                     <Swiper
-                        onBeforeInit={(swiper: any) => {
+                        onBeforeInit={(swiper: SwiperCore) => {
                             swiperRef.current = swiper;
+                        }}
+                        onSlideChange={(swiper: SwiperCore) => {
+                            setActive(swiper.realIndex);
                         }}
                         slidesPerView={3}
                         loop
