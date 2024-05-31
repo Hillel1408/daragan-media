@@ -1,4 +1,4 @@
-import { Technologies, Project, Observer, VideoModal } from "components";
+import { Technologies, Project, Observer } from "components";
 import { landingPageList } from "constants/";
 
 export default function LandingPage() {

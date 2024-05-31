@@ -55,6 +55,7 @@ export default function Frontend() {
             title: "LS-Admin",
             text: "Админка для сервера лицензий, на React",
             href: "",
+            video: "1",
         },
     ];
 

@@ -4,7 +4,7 @@ import classNames from "classnames";
 const VideoModal = ({ children, closeModal }: { children: JSX.Element; closeModal: (arg: boolean) => void }) => {
     return createPortal(
         <div
-            className={classNames("fixed top-0 w-full h-full bg-[rgba(0,0,0,0.40)] overflow-auto min-w-[375px] z-10")}
+            className={classNames("fixed top-0 w-full h-full bg-[rgba(0,0,0,0.60)] overflow-auto min-w-[375px] z-20")}
             onClick={() => {
                 closeModal(false);
                 document.body.classList.remove("lock");
