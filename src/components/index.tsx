@@ -20,6 +20,7 @@ import AboutMe from "components/AboutMe/AboutMe";
 import Reviews from "components/Reviews/Reviews";
 import Observer from "components/Observer/Observer";
 import Diplomas from "components/Diplomas/Diplomas";
+import VideoModal from "components/VideoModal/VideoModal";
 
 export {
     Header,
@@ -44,4 +45,5 @@ export {
     Reviews,
     Observer,
     Diplomas,
+    VideoModal,
 };
