@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { SecondaryButton, Observer } from "components";
 
 export default function Intro() {
+    const { t } = useTranslation();
+
     return (
         <div className="bg-[#111112] overflow-hidden relative">
             <div
@@ -10,13 +13,9 @@ export default function Intro() {
             >
                 <Observer>
                     <>
-                        <h1 className="font-['Intro'] text-[55px] leading-[136%] uppercase text-white mb-5">
-                            Фронтенд <br /> разработка
-                        </h1>
-                        <p className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)]">
-                            Опытный фронтенд разработчик с глубоким <br /> знанием HTML, CSS и JavaScript
-                        </p>
-                        <SecondaryButton text="Связаться со мной" className="w-[255px] mt-[38px]" />
+                        <h1 className="font-['Intro'] text-[55px] leading-[136%] uppercase text-white mb-5 max-w-[500px]">{t("FrontendDevelopment")}</h1>
+                        <p className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] max-w-[450px]">{t("SeasonedFrontend")}</p>
+                        <SecondaryButton text={t("MyContacts")} className="w-[255px] mt-[38px]" />
                     </>
                 </Observer>
             </div>

@@ -26,7 +26,7 @@ export default function Header() {
                 <Switcher text={t("Switcher")} />
                 <Contacts className="gap-[50px]" />
                 <Socials />
-                <Button text="Заказать обратный звонок" className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112]" />
+                <Button text={t("CallMeBack")} className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112]" />
                 <div className="text-white flex gap-2 text-[15px] font-light">
                     {languages.map((item, index) => (
                         <button
