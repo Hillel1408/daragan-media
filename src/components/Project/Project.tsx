@@ -25,7 +25,11 @@ export default function Project({ item }: { item: { img: string; title: string; 
                 </div>
                 <p className="mt-5 text-[20px] font-medium leading-[145%] text-white text-center">{item.title}</p>
                 <p className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] text-center">{item.text}</p>
-                {!item.video && <a href={item.href} className="absolute top-0 bottom-0 left-0 right-0" target="_blank"></a>}
+                {!item.video && (
+                    <a href={item.href} className="absolute top-0 bottom-0 left-0 right-0" target="_blank" rel="noreferrer">
+                        {" "}
+                    </a>
+                )}
             </div>
             {active && (
                 <VideoModal
