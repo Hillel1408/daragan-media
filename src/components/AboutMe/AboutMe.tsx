@@ -1,20 +1,19 @@
+import { useTranslation } from "react-i18next";
 import { Observer } from "components";
 
 export default function AboutMe() {
+    const { t } = useTranslation();
+
     return (
         <div className="bg-[#111112] pb-[145px] overflow-hidden">
             <div className="container">
                 <Observer>
-                    <h2 className="font-['Intro'] text-[32px] leading-[32px] text-white text-center mb-8">ПАРА СТРОК ОБО МНЕ</h2>
+                    <h2 className="font-['Intro'] text-[32px] leading-[32px] text-white text-center mb-8">{t("AboutMe")}</h2>
                 </Observer>
                 <Observer>
                     <div className="max-w-[1080px] text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] text-center">
-                        <p className="mb-6">
-                            Привет! Я <span className="text-white font-bold">Дараган Максим</span>, программист из Санкт-Петербурга. С 2017 года я создаю сайты,
-                            которые раскрыввают характер бизнеса и помогаем привлекать новых клиентов и партнеров с помощью контекстной и таргетированной
-                            рекламы.
-                        </p>
-                        <p>Моя цель — узнать бизнес и придумать идеальный способ рассказать о нем аудитории.</p>
+                        <p className="mb-6">{t("HiThere1")}</p>
+                        <p>{t("HiThere2")}</p>
                     </div>
                 </Observer>
             </div>
@@ -31,20 +30,20 @@ export default function AboutMe() {
                         <ul className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] flex flex-col gap-[22px] [&>li>span]:text-white [&>li>span]:font-bold">
                             <Observer>
                                 <li>
-                                    <span>Честно и прозрачно.</span> Разрабатываю план проекта, рассказываю о каждом этапе и объясняю, для чего он нужен,
-                                    согласовываю прототипы и дизайн-концепции.
+                                    <span className="text-white font-bold">Честно и прозрачно.</span> Разрабатываю план проекта, рассказываю о каждом этапе и
+                                    объясняю, для чего он нужен, согласовываю прототипы и дизайн-концепции.
                                 </li>
                             </Observer>
                             <Observer>
                                 <li>
-                                    <span>Вдумчиво.</span> Я не гонюсь за количеством и одновременно веду не более 3 крупных проектов — у меня всегда достаточно
-                                    ресурсов на каждого клиента.
+                                    <span className="text-white font-bold">Вдумчиво.</span> Я не гонюсь за количеством и одновременно веду не более 3 крупных
+                                    проектов — у меня всегда достаточно ресурсов на каждого клиента.
                                 </li>
                             </Observer>
                             <Observer>
                                 <li>
-                                    <span>Профессионально.</span> Знаю и применяю современные инструменты проектирования, дизайна и продвижения, постоянно учусь
-                                    и повышаю квалификацию.
+                                    <span className="text-white font-bold">Профессионально.</span> Знаю и применяю современные инструменты проектирования,
+                                    дизайна и продвижения, постоянно учусь и повышаю квалификацию.
                                 </li>
                             </Observer>
                         </ul>
