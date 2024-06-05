@@ -9,22 +9,22 @@ export default function LandingPage() {
         {
             img: "img-1.png",
             imgHover: "img-2.png",
-            title: "Nika Lobanova",
-            text: "Адаптивная верстка макета Nika Lobanova для персонального стилиста",
+            title: t("NikaLobanova1"),
+            text: t("NikaLobanova2"),
             href: "https://hillel1408.github.io/nika_lobanova/",
         },
         {
             img: "img-3.png",
             imgHover: "img-4.png",
-            title: "Engineering company",
-            text: "Адаптивная верстка макета Engineering company",
+            title: t("EngineeringCompany1"),
+            text: t("EngineeringCompany2"),
             href: "https://hillel1408.github.io/engineering-company/",
         },
         {
             img: "img-5.png",
             imgHover: "img-6.png",
-            title: "Country houses",
-            text: "Адаптивная верстка макета Country houses",
+            title: t("CountryHouses1"),
+            text: t("CountryHouses2"),
             href: "https://hillel1408.github.io/country-houses/",
         },
         {
