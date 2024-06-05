@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Technologies, Project, Observer } from "components";
 import { landingPageList } from "constants/";
 
 export default function LandingPage() {
+    const { t } = useTranslation();
+
     const projects = [
         {
             img: "img-1.png",
@@ -56,7 +59,7 @@ export default function LandingPage() {
 
     return (
         <div className="flex flex-col gap-[70px]">
-            <Technologies text="Валидная, кроссбраузерная верстка" list={landingPageList}></Technologies>
+            <Technologies text={t("Valid")} list={landingPageList}></Technologies>
             <div className="grid gap-[66px] grid-cols-3">
                 {projects.map((item, index) => (
                     <Observer key={index}>

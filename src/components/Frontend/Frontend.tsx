@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Technologies, Project, Observer } from "components";
 
 export default function Frontend() {
+    const { t } = useTranslation();
+
     const list = [
         { icon: "React.svg", text: "React", width: "40", height: "36" },
         { icon: "NextJS.svg", text: "NextJS", width: "36", height: "36" },
@@ -61,7 +64,7 @@ export default function Frontend() {
 
     return (
         <div className="flex flex-col gap-[70px]">
-            <Technologies text="Валидная, кроссбраузерная верстка" list={list}></Technologies>
+            <Technologies text={t("FrontendDevelopment")} list={list}></Technologies>
             <div className="grid gap-[66px] grid-cols-3">
                 {projects.map((item, index) => (
                     <Observer key={index}>

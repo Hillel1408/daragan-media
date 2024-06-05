@@ -2,17 +2,20 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 import "swiper/css";
 
 export default function Diplomas() {
     const [active, setActive] = useState(1);
     const swiperRef = useRef<SwiperCore>();
 
+    const { t } = useTranslation();
+
     const sert = [
-        { url: "sert-1.webp", text1: "Сертификат Google ADS по поиску.", text2: "Обучался в Convert Monster." },
-        { url: "sert-2.webp", text1: "Стажировка Only-digital.", text2: "-" },
-        { url: "sert-3.webp", text1: "Сертификат фронтенд-разработчика.", text2: "Обучался в GeekBrains." },
-        { url: "sert-4.webp", text1: "Стажировка Hawkingbros", text2: "-" },
+        { url: "sert-1.webp", text1: t("Diplomas2"), text2: t("Diplomas3") },
+        { url: "sert-2.webp", text1: t("Diplomas4"), text2: "-" },
+        { url: "sert-3.webp", text1: t("Diplomas5"), text2: t("Diplomas6") },
+        { url: "sert-4.webp", text1: t("Diplomas7"), text2: "-" },
     ];
 
     return (
@@ -20,9 +23,7 @@ export default function Diplomas() {
             <div className="container grid grid-cols-[384px_1fr] gap-[50px]">
                 <div className="flex flex-col justify-between gap-[60px]">
                     <div>
-                        <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase">
-                            ДИПЛОМЫ <br /> и СЕРТИФИКАТЫ
-                        </h2>
+                        <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase">{t("Diplomas1")}</h2>
                         <div className="flex gap-5 mt-[26px]">
                             <button className="group" onClick={() => swiperRef.current?.slidePrev()}>
                                 <svg width="80" height="16" viewBox="0 0 80 16">
