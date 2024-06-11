@@ -10,7 +10,7 @@ export default function Header() {
     const { t } = useTranslation();
 
     return (
-        <div className="py-[30px] bg-[#111112] md:py-[28px] sm:py-5 sm:relative">
+        <div className="py-[30px] bg-[#111112] md:py-[28px] sm:py-5 sm:relative sm:border-b sm:border-[#2b2b2d]">
             <div className="container flex justify-between items-center">
                 <Logo />
                 {isDesktop && <Switcher text={t("Switcher")} />}
