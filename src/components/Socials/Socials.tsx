@@ -1,6 +1,8 @@
-export default function Socials() {
+import classNames from "classnames";
+
+export default function Socials({ className }: { className?: string }) {
     return (
-        <ul className="flex items-center gap-4">
+        <ul className={classNames("flex items-center gap-4", className)}>
             <li>
                 <a href="tg://resolve?domain=Hillel1408">
                     <svg width="18" height="15" className="opacity-50 hover:opacity-100 duration-300">
