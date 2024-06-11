@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import classNames from "classnames";
 import { useTranslation } from "react-i18next";
-import { Switcher, Languages } from "components";
+import { Switcher, Languages, Button } from "components";
+import { useMatchMedia } from "hooks";
 
 export default function MobileMenu({ active, setActive }: { active: boolean; setActive: (arg: (prev: boolean) => boolean) => void }) {
     const { t } = useTranslation();
+    const { isMobile, isTablet, isDesktop } = useMatchMedia();
 
     const clickHandler = (e: any) => {
         if (!e.target.closest(".mobileMenuOpen")) setActive((prev) => !prev);
@@ -35,10 +37,15 @@ export default function MobileMenu({ active, setActive }: { active: boolean; set
             >
                 <img src="images/close.svg" alt="" width="12px" height="12px" />
             </button>
-            <div className="sm:bg-[#131316] sm:py-5 sm:px-4 sm:border-t sm:border-b sm:border-[#2b2b2d]">
+            <div className="sm:bg-[#131316] sm:py-5 sm:px-5 sm:border-t sm:border-b sm:border-[#2b2b2d]">
                 <Switcher text={t("Switcher")} className="flex-row-reverse gap-3 [&>span]:text-[13px] mb-[30px] sm:flex-row sm:[&>span]:text-[16px]" />
                 <Languages className="justify-end sm:justify-start" />
             </div>
+            {isMobile && (
+                <div className="container pt-6">
+                    <Button text={t("CallMeBack")} className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112] w-full" />
+                </div>
+            )}
         </div>
     );
 }
