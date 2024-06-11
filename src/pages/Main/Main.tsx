@@ -4,12 +4,12 @@ export default function Main() {
     return (
         <Layout>
             <>
-                <Intro />
+                {/* <Intro />
                 <MyWorks />
                 <Reviews />
                 <Feedback />
                 <Diplomas />
-                <AboutMe />
+                <AboutMe /> */}
             </>
         </Layout>
     );

@@ -3,7 +3,7 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
-        screens: {},
+        screens: { lg: { max: "1024px" }, md: { max: "768px" }, sm: { max: "550px" } },
         extend: {},
     },
     plugins: [
@@ -42,6 +42,11 @@ module.exports = {
                 },
                 ".bg-switcher": {
                     background: "linear-gradient(270deg, #494949 29.28%, #5A5A5A 78.75%)",
+                },
+                "@media (max-width: 550px)": {
+                    ".container": {
+                        padding: "0 20px",
+                    },
                 },
             });
         }),

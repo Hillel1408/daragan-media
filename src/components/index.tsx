@@ -21,6 +21,8 @@ import Reviews from "components/Reviews/Reviews";
 import Observer from "components/Observer/Observer";
 import Diplomas from "components/Diplomas/Diplomas";
 import VideoModal from "components/VideoModal/VideoModal";
+import Languages from "components/Languages/Languages";
+import MobileMenu from "components/MobileMenu/MobileMenu";
 
 export {
     Header,
@@ -46,4 +48,6 @@ export {
     Observer,
     Diplomas,
     VideoModal,
+    Languages,
+    MobileMenu,
 };

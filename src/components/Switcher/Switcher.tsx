@@ -1,12 +1,12 @@
 import classNames from "classnames";
 import { useState } from "react";
 
-export default function Switcher({ text }: { text: string }) {
+export default function Switcher({ text, className }: { text: string; className?: string }) {
     const [active, setActive] = useState(true);
 
     return (
         <div
-            className="flex items-center gap-1 cursor-pointer"
+            className={classNames("flex items-center gap-1 cursor-pointer", className)}
             onClick={() => {
                 setActive((prev) => !prev);
             }}
