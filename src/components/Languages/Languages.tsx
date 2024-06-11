@@ -20,7 +20,9 @@ export default function Languages({ className }: { className?: string }) {
             {languages.map((item, index) => (
                 <button
                     key={index}
-                    className={classNames(item !== activeLanguage ? "opacity-50" : "md:bg-[#0d0d0d] md:w-[25px] md:h-[25px] md:rounded-[6px]")}
+                    className={classNames(
+                        item !== activeLanguage ? "opacity-50" : "md:bg-[#0d0d0d] md:w-[25px] md:h-[25px] md:rounded-[6px] sm:w-[33px] sm:h-[33px]",
+                    )}
                     onClick={() => {
                         changeLanguage(item);
                     }}
