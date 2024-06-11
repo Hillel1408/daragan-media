@@ -35,7 +35,7 @@ export default function MobileMenu({ active, setActive }: { active: boolean; set
             >
                 <img src="images/close.svg" alt="" width="12px" height="12px" />
             </button>
-            <div className="sm:bg-[#131316] sm:py-5 sm:px-4 border-t border-b border-[#2b2b2d]">
+            <div className="sm:bg-[#131316] sm:py-5 sm:px-4 sm:border-t sm:border-b sm:border-[#2b2b2d]">
                 <Switcher text={t("Switcher")} className="flex-row-reverse gap-3 [&>span]:text-[13px] mb-[30px] sm:flex-row sm:[&>span]:text-[16px]" />
                 <Languages className="ml-auto" />
             </div>
