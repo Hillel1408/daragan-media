@@ -3,7 +3,7 @@ const plugin = require("tailwindcss/plugin");
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
-        screens: { lg: { max: "1024px" }, md: { max: "768px" }, sm: { max: "550px" } },
+        screens: { xl: { max: "1240px" }, lg: { max: "1024px" }, md: { max: "768px" }, sm: { max: "550px" } },
         extend: {},
     },
     plugins: [
