@@ -11,7 +11,7 @@ export default function Intro() {
                 before:content-[''] before:block before:h-[77px] before:w-[100%] before:border-[2px] before:border-white before:rounded-tr-[24px]
                 before:border-l-0 before:border-b-0 before:absolute before:top-[61px] before:right-[calc(100vw/2-310px)] before:z-20 border border-[#2b2b2d]
                 border-l-0 border-r-0 xl:px-[28px] md:pt-[84px] md:pb-[82px] md:before:h-[64px] md:before:top-6 md:before:right-[calc(100vw/2-226px)]
-                md:bg-[length:500px] sm:pt-[89px] sm:pb-[375px] sm:before:top-[41px]"
+                md:bg-[length:500px] sm:pt-[89px] sm:pb-[350px] sm:before:top-[41px] sm:before:w-[345px]"
             >
                 <Observer className="sm:text-center">
                     <>
