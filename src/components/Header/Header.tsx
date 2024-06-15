@@ -23,8 +23,8 @@ export default function Header() {
                     <div className="mobileMenuOpen relative sm:static">
                         <button
                             onClick={() => {
+                                setActive((prev) => !prev);
                                 if (isMobile) {
-                                    setActive((prev) => !prev);
                                     if (active) {
                                         scrollLock.enablePageScroll();
                                     } else {
