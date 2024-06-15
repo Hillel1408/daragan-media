@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Socials, Contacts, Button, Switcher, Logo, Languages, MobileMenu } from "components";
 import { useMatchMedia } from "hooks";
-import { useState } from "react";
 import classNames from "classnames";
+import scrollLock from "scroll-lock";
 
 export default function Header() {
     const [active, setActive] = useState(false);
@@ -22,8 +23,14 @@ export default function Header() {
                     <div className="mobileMenuOpen relative sm:static">
                         <button
                             onClick={() => {
-                                isMobile && document.body.classList.toggle("lock");
-                                setActive((prev) => !prev);
+                                if (isMobile) {
+                                    setActive((prev) => !prev);
+                                    if (active) {
+                                        scrollLock.enablePageScroll();
+                                    } else {
+                                        scrollLock.disablePageScroll();
+                                    }
+                                }
                             }}
                             className="flex"
                         >
