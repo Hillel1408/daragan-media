@@ -58,3 +58,9 @@
 body.lock {
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .bg-intro {
+        background-position: calc(100vw / 2 - 80px) 35px;
+    }
+}
