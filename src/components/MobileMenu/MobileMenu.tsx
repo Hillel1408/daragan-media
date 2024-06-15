@@ -22,7 +22,7 @@ export default function MobileMenu({ active, setActive }: { active: boolean; set
     return (
         <div
             className={classNames(
-                "absolute sm:overflow-auto px-4 pb-[28px] pt-[13px] border duration-200 border-[#2b2b2d] rounded-[8px] right-0 top-0 bg-[#131316] z-20 w-[159px] flex flex-col translate-x-[14px] translate-y-[-16px] sm:translate-x-0 sm:translate-y-0 sm:w-full sm:top-[73px] sm:rounded-none sm:border-none sm:h-[calc(100vh-72px)] sm:bg-[#111112] sm:px-0 sm:py-0",
+                "absolute sm:overflow-auto px-4 pb-[28px] pt-[13px] border duration-200 border-[#2b2b2d] rounded-[8px] right-0 top-0 bg-[#131316] z-20 w-[159px] flex flex-col translate-x-[14px] translate-y-[-16px] sm:translate-x-0 sm:translate-y-0 sm:w-full sm:top-[0] sm:rounded-none sm:border-none sm:h-[100vh] sm:bg-[#111112] sm:px-0 sm:py-0",
                 active ? "opacity-100 visible" : "opacity-0 invisible",
             )}
             onClick={(e) => {

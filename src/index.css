@@ -77,3 +77,8 @@ body.lock {
         }
     }
 }
+@media (max-width: 320px) {
+    .bg-intro {
+        background-position: -100px bottom;
+    }
+}
