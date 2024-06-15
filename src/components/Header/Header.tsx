@@ -22,6 +22,7 @@ export default function Header() {
                     <div className="mobileMenuOpen relative sm:static">
                         <button
                             onClick={() => {
+                                isMobile && document.body.classList.toggle("lock");
                                 setActive((prev) => !prev);
                             }}
                             className="flex"
