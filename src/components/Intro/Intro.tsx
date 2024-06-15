@@ -18,7 +18,7 @@ export default function Intro() {
                         <h1 className="font-['Intro'] text-[55px] leading-[136%] uppercase text-white mb-5 max-w-[500px] md:text-[40px] md:mb-[6px]">
                             {t("FrontendDevelopment")}
                         </h1>
-                        <p className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] max-w-[450px] md:max-w-[300px] sm:max-w-[400px] sm:mx-auto">
+                        <p className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] max-w-[450px] md:max-w-[300px] sm:max-w-[400px] sm:mx-auto sm:text-[16px]">
                             {t("SeasonedFrontend")}
                         </p>
                         <SecondaryButton text={t("MyContacts")} className="w-[255px] mt-[38px] md:mt-[29px] sm:mt-[21px]" />
