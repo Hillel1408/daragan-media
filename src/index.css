@@ -64,3 +64,15 @@ body.lock {
         background-position: calc(100vw / 2 - 80px) 35px;
     }
 }
+@media (max-width: 550px) {
+    .bg-intro {
+        background-position: calc(100vw / 2 - 290px) bottom;
+    }
+    .intro-before {
+        &::before {
+            content: url("../public/images/line.svg") !important;
+            border: none;
+            right: 0;
+        }
+    }
+}
