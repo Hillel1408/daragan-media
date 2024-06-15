@@ -9,7 +9,7 @@ export default function MobileMenu({ active, setActive }: { active: boolean; set
     const { isMobile, isTablet, isDesktop } = useMatchMedia();
 
     const clickHandler = (e: any) => {
-        if (!e.target.closest(".mobileMenuOpen")) setActive((prev) => !prev);
+        if (!e.target.closest(".mobileMenuOpen") && isTablet) setActive((prev) => !prev);
     };
 
     useEffect(() => {
