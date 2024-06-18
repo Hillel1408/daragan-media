@@ -2,8 +2,10 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import cookies from "js-cookie";
 import classNames from "classnames";
+import { useMatchMedia } from "hooks";
+import scrollLock from "scroll-lock";
 
-export default function Languages({ className }: { className?: string }) {
+export default function Languages({ className, setActive }: { className?: string; setActive?: (arg: (prev: boolean) => boolean) => void }) {
     const currentLanguageCode = cookies.get("i18next") || "en";
     const [activeLanguage, setActiveLanguage] = useState(currentLanguageCode);
 
@@ -13,6 +15,8 @@ export default function Languages({ className }: { className?: string }) {
         setActiveLanguage(language);
         i18n.changeLanguage(language);
     };
+
+    const { isMobile, isTablet, isDesktop } = useMatchMedia();
 
     const languages = ["ru", "en"];
     return (
@@ -25,6 +29,10 @@ export default function Languages({ className }: { className?: string }) {
                     )}
                     onClick={() => {
                         changeLanguage(item);
+                        if (setActive && isMobile) {
+                            setActive((prev) => !prev);
+                            scrollLock.enablePageScroll();
+                        }
                     }}
                 >
                     {item}
