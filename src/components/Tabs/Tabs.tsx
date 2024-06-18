@@ -12,10 +12,10 @@ export default function Tabs({
     className?: string;
 }) {
     return (
-        <div className="md:-mx-[28px] md:overflow-auto md:px-[28px] sm:-mx-[20px] sm:px-[20px]">
+        <div className="md:-mx-[28px] md:overflow-auto sm:-mx-[20px]">
             <ul
                 className={classNames(
-                    "text-[18px] leading-[29px] text-white flex justify-center gap-[2px] py-[10px] px-3 border-transparent bg-origin-border rounded-[33px] border w-max mx-auto bg-button shadow-[inset_0px_0px_0px_100vw_#111112] sm:text-[16px]",
+                    "text-[18px] leading-[29px] text-white flex justify-center gap-[2px] py-[10px] px-3 border-transparent bg-origin-border rounded-[33px] border w-max mx-auto bg-button shadow-[inset_0px_0px_0px_100vw_#111112] md:mx-[28px] sm:text-[16px] sm:mx-[20px]",
                     className,
                 )}
             >
