@@ -5,8 +5,8 @@ export default function Main() {
         <Layout>
             <>
                 <Intro />
-                {/* <MyWorks />
-                <Reviews />
+                <MyWorks />
+                {/* <Reviews />
                 <Feedback />
                 <Diplomas />
                 <AboutMe /> */}

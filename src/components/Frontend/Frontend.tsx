@@ -63,9 +63,9 @@ export default function Frontend() {
     ];
 
     return (
-        <div className="flex flex-col gap-[70px]">
+        <div className="flex flex-col gap-[70px] mt-[68px] md:mt-[36px] md:gap-[42px]">
             <Technologies text={t("FrontendDevelopment")} list={list}></Technologies>
-            <div className="grid gap-[66px] grid-cols-3">
+            <div className="grid gap-[66px] grid-cols-3 lg:grid-cols-2 md:gap-[30px]">
                 {projects.map((item, index) => (
                     <Observer key={index}>
                         <Project item={item} />
