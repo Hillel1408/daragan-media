@@ -22,7 +22,7 @@ export default function Tabs({
                 {list.map((item, index) => (
                     <li
                         className={classNames(
-                            "py-2 px-8 rounded-[33px] cursor-pointer text-nowrap w-[228px] text-center sm:px-3 sm:w-[170px]",
+                            "py-2 px-8 rounded-[33px] cursor-pointer text-nowrap w-[150px] text-center sm:px-3 sm:w-[100px]",
                             activeTab === index && "bg-tab cursor-default",
                         )}
                         key={index}
