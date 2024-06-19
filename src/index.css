@@ -76,6 +76,10 @@ body.lock {
             right: 0 !important;
         }
     }
+    .bg-reviews {
+        background-image: url("../public/images/bg-6.svg");
+        background-position: 30px center;
+    }
 }
 @media (max-width: 320px) {
     .bg-intro {

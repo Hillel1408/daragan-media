@@ -4,7 +4,7 @@ export default function Button({ text, className, onClick }: { text: string; cla
     return (
         <button
             className={classNames(
-                "border-transparent bg-origin-border rounded-[33px] text-[15px] text-white font-bold py-[11px] px-5 border md:text-[14px]",
+                "border-transparent bg-origin-border rounded-[33px] text-[17px] text-white font-bold py-[11px] px-5 border md:text-[15px]",
                 className,
             )}
             onClick={onClick}
