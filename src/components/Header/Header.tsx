@@ -25,11 +25,7 @@ export default function Header() {
                             onClick={() => {
                                 setActive((prev) => !prev);
                                 if (isMobile) {
-                                    if (active) {
-                                        scrollLock.enablePageScroll();
-                                    } else {
-                                        scrollLock.disablePageScroll();
-                                    }
+                                    active ? scrollLock.enablePageScroll() : scrollLock.disablePageScroll();
                                 }
                             }}
                             className="flex"
