@@ -8,7 +8,7 @@ export default function Feedback() {
         <div className="feedback bg-[#111112] pb-[100px] md:pb-20 sm:pb-[70px]">
             <div className="container md:px-0">
                 <div className="relative overflow-hidden">
-                    <div className="border border-white rounded-[37px] bg-[rgba(35,38,57,0.1)] py-20 px-[103px] z-10 relative lg:px-[18px] md:rounded-none sm:px-5 sm:py-[64px]">
+                    <div className="border border-white rounded-[37px] bg-[rgba(35,38,57,0.1)] py-20 px-[103px] z-10 relative lg:px-[18px] md:rounded-none md:border-l-0 md:border-r-0 sm:px-5 sm:py-[64px]">
                         <h2 className="font-['Intro'] text-[32px] uppercase text-white text-center mb-[10px] md:text-[30px] sm:text-[28px]">
                             {t("DiscussAProject")}
                         </h2>
