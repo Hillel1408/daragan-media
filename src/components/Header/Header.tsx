@@ -17,7 +17,15 @@ export default function Header() {
                 {isDesktop && <Switcher text={t("Switcher")} />}
                 {!isMobile && <Contacts className="gap-[50px] lg:[&>li:first-child]:hidden" />}
                 {isDesktop && <Socials />}
-                {!isMobile && <Button text={t("CallMeBack")} className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112]" />}
+                {!isMobile && (
+                    <Button
+                        text={t("CallMeBack")}
+                        className="bg-button shadow-[inset_0px_0px_0px_100vw_#111112]"
+                        onClick={() => {
+                            document.querySelector(".feedback")?.scrollIntoView({ block: "center", behavior: "smooth" });
+                        }}
+                    />
+                )}
                 {isDesktop && <Languages />}
                 {!isDesktop && (
                     <div className="mobileMenuOpen relative sm:static">

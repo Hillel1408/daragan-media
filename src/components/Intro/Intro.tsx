@@ -21,7 +21,13 @@ export default function Intro() {
                         <p className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] max-w-[450px] md:max-w-[300px] sm:max-w-[400px] sm:mx-auto sm:text-[16px]">
                             {t("SeasonedFrontend")}
                         </p>
-                        <SecondaryButton text={t("MyContacts")} className="w-[255px] mt-[38px] md:mt-[29px] sm:mt-[21px]" />
+                        <SecondaryButton
+                            text={t("MyContacts")}
+                            className="w-[255px] mt-[38px] md:mt-[29px] sm:mt-[21px]"
+                            onClick={() => {
+                                document.querySelector(".feedback")?.scrollIntoView({ block: "center", behavior: "smooth" });
+                            }}
+                        />
                     </>
                 </Observer>
             </div>

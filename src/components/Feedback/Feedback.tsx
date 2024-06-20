@@ -5,7 +5,7 @@ export default function Feedback() {
     const { t } = useTranslation();
 
     return (
-        <div className="bg-[#111112] pb-[100px] md:pb-20 sm:pb-[70px]">
+        <div className="feedback bg-[#111112] pb-[100px] md:pb-20 sm:pb-[70px]">
             <div className="container md:px-0">
                 <div className="relative overflow-hidden">
                     <div className="border border-white rounded-[37px] bg-[rgba(35,38,57,0.1)] py-20 px-[103px] z-10 relative lg:px-[18px] md:rounded-none sm:px-5 sm:py-[64px]">
