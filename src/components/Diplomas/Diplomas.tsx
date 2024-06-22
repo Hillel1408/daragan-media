@@ -1,11 +1,15 @@
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperCore } from "swiper/types";
+import { DiplomasText } from "components";
 import classNames from "classnames";
+import { useMatchMedia } from "hooks";
 import { useTranslation } from "react-i18next";
 import "swiper/css";
 
 export default function Diplomas() {
+    const { isMobile, isTablet, isDesktop } = useMatchMedia();
+
     const [active, setActive] = useState(1);
     const swiperRef = useRef<SwiperCore>();
 
@@ -19,11 +23,11 @@ export default function Diplomas() {
     ];
 
     return (
-        <div className="pb-[100px] bg-[#111112]">
-            <div className="container grid grid-cols-[384px_1fr] gap-[50px]">
-                <div className="flex flex-col justify-between gap-[60px]">
+        <div className="pb-[100px] bg-[#111112] sm:pb-[64px]">
+            <div className="container grid grid-cols-[384px_1fr] gap-[50px] lg:grid-cols-[284px_1fr] md:grid-cols-[1fr] md:gap-[40px] sm:gap-[30px]">
+                <div className="flex flex-col justify-between gap-[60px] md:gap-[30px]">
                     <div>
-                        <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase">{t("Diplomas1")}</h2>
+                        <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase sm:text-[28px]">{t("Diplomas1")}</h2>
                         <div className="flex gap-5 mt-[26px]">
                             <button className="group" onClick={() => swiperRef.current?.slidePrev()}>
                                 <svg width="80" height="16" viewBox="0 0 80 16">
@@ -53,11 +57,7 @@ export default function Diplomas() {
                             <span className="text-[20px] leading-[91%] text-[rgba(255,255,255,0.5)]">/</span>
                             <span className="text-[20px] leading-[91%] text-[rgba(255,255,255,0.5)]">{sert.length}</span>
                         </p>
-                        <p className="mt-[30px] pl-[30px] text-[20px] leading-[145%] flex flex-col">
-                            <span className="text-white">{sert[active].text1}</span>
-                            <span className="text-[rgba(255,255,255,0.7)]">{sert[active].text2}</span>
-                        </p>
-                        <div className="rounded-bl-[24px] border-b-[2px] border-l-[2px] pb-11"></div>
+                        {isDesktop && <DiplomasText text1={sert[active].text1} text2={sert[active].text2} />}
                     </div>
                 </div>
                 <div className="items-end snap-start max-w-[686px] overflow-hidden">
@@ -68,10 +68,15 @@ export default function Diplomas() {
                         onSlideChange={(swiper: SwiperCore) => {
                             setActive(swiper.realIndex);
                         }}
-                        slidesPerView={3}
+                        slidesPerView={1}
                         loop
                         spaceBetween={35}
                         className="mySwiper"
+                        breakpoints={{
+                            550: {
+                                slidesPerView: 3,
+                            },
+                        }}
                     >
                         {sert.map((item, index) => (
                             <SwiperSlide>
@@ -83,6 +88,7 @@ export default function Diplomas() {
                         ))}
                     </Swiper>
                 </div>
+                {!isDesktop && <DiplomasText text1={sert[active].text1} text2={sert[active].text2} />}
             </div>
         </div>
     );

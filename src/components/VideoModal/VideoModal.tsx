@@ -1,5 +1,6 @@
 import { createPortal } from "react-dom";
 import classNames from "classnames";
+import scrollLock from "scroll-lock";
 
 const VideoModal = ({ children, closeModal }: { children: JSX.Element; closeModal: (arg: boolean) => void }) => {
     return createPortal(
@@ -7,7 +8,7 @@ const VideoModal = ({ children, closeModal }: { children: JSX.Element; closeModa
             className={classNames("fixed top-0 w-full h-full bg-[rgba(0,0,0,0.60)] overflow-auto min-w-[375px] z-20")}
             onClick={() => {
                 closeModal(false);
-                document.body.classList.remove("lock");
+                scrollLock.enablePageScroll();
             }}
         >
             <div className="h-full py-5 px-5 flex justify-center items-center">
@@ -30,7 +31,7 @@ const VideoModal = ({ children, closeModal }: { children: JSX.Element; closeModa
                         className="absolute top-[29px] right-[29px]"
                         onClick={() => {
                             closeModal(false);
-                            document.body.classList.remove("lock");
+                            scrollLock.enablePageScroll();
                         }}
                     >
                         <svg width="15" height="15" viewBox="0 0 15 15">

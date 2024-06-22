@@ -8,8 +8,8 @@ export default function Main() {
                 <MyWorks />
                 <Reviews />
                 <Feedback />
-                {/* <Diplomas />
-                <AboutMe /> */}
+                <Diplomas />
+                {/* <AboutMe /> */}
             </>
         </Layout>
     );

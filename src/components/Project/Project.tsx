@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { VideoModal } from "components";
+import scrollLock from "scroll-lock";
 
 export default function Project({ item }: { item: { img: string; title: string; text: string; imgHover: string; href: string; video?: string } }) {
     const [active, setActive] = useState(false);
@@ -11,7 +12,7 @@ export default function Project({ item }: { item: { img: string; title: string; 
                 onClick={() => {
                     if (item.video) {
                         setActive(true);
-                        document.body.classList.add("lock");
+                        scrollLock.disablePageScroll();
                     }
                 }}
             >

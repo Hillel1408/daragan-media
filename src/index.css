@@ -83,6 +83,13 @@ html {
         background-image: url("../public/images/bg-6.svg");
         background-position: 30px center;
     }
+    .swiper-slide-active {
+        min-width: auto;
+        height: auto !important;
+    }
+    .swiper-wrapper {
+        align-items: flex-start;
+    }
 }
 @media (max-width: 320px) {
     .bg-intro {

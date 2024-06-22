@@ -23,6 +23,7 @@ import Diplomas from "components/Diplomas/Diplomas";
 import VideoModal from "components/VideoModal/VideoModal";
 import Languages from "components/Languages/Languages";
 import MobileMenu from "components/MobileMenu/MobileMenu";
+import DiplomasText from "components/DiplomasText/DiplomasText";
 
 export {
     Header,
@@ -50,4 +51,5 @@ export {
     VideoModal,
     Languages,
     MobileMenu,
+    DiplomasText,
 };
