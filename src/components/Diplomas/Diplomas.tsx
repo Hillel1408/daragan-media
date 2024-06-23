@@ -23,7 +23,7 @@ export default function Diplomas() {
     ];
 
     return (
-        <div className="pb-[100px] bg-[#111112] sm:pb-[64px]">
+        <div className="pb-[100px] bg-[#111112] md:pb-20 sm:pb-[64px]">
             <div className="container grid grid-cols-[384px_1fr] gap-[50px] lg:grid-cols-[284px_1fr] md:grid-cols-[1fr] md:gap-[40px] sm:gap-[30px]">
                 <div className="flex flex-col justify-between gap-[60px] md:gap-[30px]">
                     <div>
@@ -73,7 +73,7 @@ export default function Diplomas() {
                         spaceBetween={35}
                         className="mySwiper"
                         breakpoints={{
-                            550: {
+                            551: {
                                 slidesPerView: 3,
                             },
                         }}

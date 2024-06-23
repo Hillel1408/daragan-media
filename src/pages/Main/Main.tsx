@@ -9,7 +9,7 @@ export default function Main() {
                 <Reviews />
                 <Feedback />
                 <Diplomas />
-                {/* <AboutMe /> */}
+                <AboutMe />
             </>
         </Layout>
     );

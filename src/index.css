@@ -66,6 +66,9 @@ html {
     .bg-intro {
         background-position: calc(100vw / 2 - 80px) 35px;
     }
+    .bg-about-me {
+        background-image: none;
+    }
 }
 @media (max-width: 550px) {
     .bg-intro {
