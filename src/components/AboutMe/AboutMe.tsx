@@ -29,7 +29,7 @@ export default function AboutMe() {
                         <Observer>
                             <h2 className="text-[32px] uppercase text-white font-['Intro'] mb-[32px] sm:text-[28px] sm:mb-3">{t("HowIWork")}</h2>
                         </Observer>
-                        <ul className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] flex flex-col gap-[22px] [&>li>span]:text-white [&>li>span]:font-bold sm:gap-3">
+                        <ul className="text-[18px] leading-[161%] text-[rgba(255,255,255,0.7)] flex flex-col gap-[22px] [&>li>span]:text-white [&>li>span]:font-bold sm:gap-3 sm:text-[16px]">
                             <Observer>
                                 <li>
                                     <span className="text-white font-bold">{t("HonestyAndTransparency1")}</span> {t("HonestyAndTransparency2")}
