@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Observer } from "components";
+import { useMatchMedia } from "hooks";
 
 export default function AboutMe() {
+    const { isMobile, isTablet, isDesktop } = useMatchMedia();
+
     const { t } = useTranslation();
 
     return (
@@ -22,7 +25,7 @@ export default function AboutMe() {
             <div
                 className="bg-about-me border border-[#2b2b2d] border-l-0 border-r-0 mt-[100px] pt-[55px] pb-[38px] bg-[rgba(35,38,57,0.1)] before:content-['']
                 before:block before:h-[100px] before:w-[100%] before:border-[2px] before:border-white before:rounded-bl-[24px] relative before:border-r-0
-                before:border-t-0 before:absolute before:-bottom-[42.3px] before:left-[calc(100vw/2-364px)] md:mt-[45px] md:py-[45px] md:before:hidden"
+                before:border-t-0 before:absolute before:-bottom-[42.3px] before:left-[calc(100vw/2-364px)] md:mt-[45px] md:py-[45px] md:before:left-[calc(100vw/2)] md:before:-bottom-[52px]"
             >
                 <div className="container">
                     <div className="max-w-[545px] ml-auto md:ml-0 md:max-w-none md:text-center">
@@ -47,6 +50,7 @@ export default function AboutMe() {
                             </Observer>
                         </ul>
                     </div>
+                    {!isDesktop && <img src="images/bg-4.svg" alt="" className="max-w-[549px] mt-[37px] w-full mx-auto" />}
                 </div>
             </div>
         </div>

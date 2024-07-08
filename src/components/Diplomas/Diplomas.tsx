@@ -79,7 +79,7 @@ export default function Diplomas() {
                         }}
                     >
                         {sert.map((item, index) => (
-                            <SwiperSlide>
+                            <SwiperSlide key={index}>
                                 <div key={index} className={classNames("h-full relative")}>
                                     <img src={`images/${item.url}`} alt="" className="object-cover w-full h-full" />
                                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.4)]"></div>
