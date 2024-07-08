@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { useMatchMedia } from "hooks";
 import scrollLock from "scroll-lock";
 
-export default function Languages({ className, setActive }: { className?: string; setActive?: (arg: (prev: boolean) => boolean) => void }) {
+export default function Languages({ className, setActiveMenu }: { className?: string; setActiveMenu?: (arg: (prev: boolean) => boolean) => void }) {
     const currentLanguageCode = cookies.get("i18next") || "en";
     const [activeLanguage, setActiveLanguage] = useState(currentLanguageCode);
 
@@ -29,8 +29,8 @@ export default function Languages({ className, setActive }: { className?: string
                     )}
                     onClick={() => {
                         changeLanguage(item);
-                        if (setActive && isMobile) {
-                            setActive((prev) => !prev);
+                        if (setActiveMenu && isMobile) {
+                            setActiveMenu((prev) => !prev);
                             scrollLock.enablePageScroll();
                         }
                     }}

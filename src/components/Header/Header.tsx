@@ -6,12 +6,12 @@ import classNames from "classnames";
 import scrollLock from "scroll-lock";
 
 export default function Header() {
-    const [active, setActive] = useState(false);
+    const [activeMenu, setActiveMenu] = useState(false);
     const { isMobile, isTablet, isDesktop } = useMatchMedia();
     const { t } = useTranslation();
 
     return (
-        <div className="py-[30px] bg-[#111112] md:py-[28px] sm:py-5 sm:relative sm:border-b sm:border-[#2b2b2d]">
+        <div className="py-[30px] bg-[#111112] min-w-[320px] md:py-[28px] sm:py-5 sm:relative sm:border-b sm:border-[#2b2b2d]">
             <div className="container flex justify-between items-center">
                 <Logo />
                 {isDesktop && <Switcher text={t("Switcher")} />}
@@ -31,17 +31,23 @@ export default function Header() {
                     <div className="mobileMenuOpen relative sm:static">
                         <button
                             onClick={() => {
-                                setActive((prev) => !prev);
+                                setActiveMenu((prev) => !prev);
                                 if (isMobile) {
-                                    active ? scrollLock.enablePageScroll() : scrollLock.disablePageScroll();
+                                    activeMenu ? scrollLock.enablePageScroll() : scrollLock.disablePageScroll();
                                 }
                             }}
                             className="flex"
                         >
-                            <img src="images/menu.svg" alt="" width="18px" height="6px" className={classNames(active ? "sm:hidden" : "sm:block")} />
-                            <img src="images/close.svg" alt="" width="12px" height="12px" className={classNames("hidden", active ? "sm:block" : "sm:hidden")} />
+                            <img src="images/menu.svg" alt="" width="18px" height="6px" className={classNames(activeMenu ? "sm:hidden" : "sm:block")} />
+                            <img
+                                src="images/close.svg"
+                                alt=""
+                                width="12px"
+                                height="12px"
+                                className={classNames("hidden", activeMenu ? "sm:block" : "sm:hidden")}
+                            />
                         </button>
-                        <MobileMenu active={active} setActive={setActive} />
+                        <MobileMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
                     </div>
                 )}
             </div>

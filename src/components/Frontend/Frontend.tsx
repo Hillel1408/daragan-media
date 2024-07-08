@@ -48,8 +48,8 @@ export default function Frontend() {
         {
             img: "img-31.png",
             imgHover: "img-32.png",
-            title: t("Solidstack1"),
-            text: t("Solidstack2"),
+            title: t("TheTrueFacts1"),
+            text: t("TheTrueFacts2"),
             href: "",
         },
         {
