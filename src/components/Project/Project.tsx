@@ -38,7 +38,7 @@ export default function Project({ item }: { item: { img: string; title: string; 
                         setActive(false);
                     }}
                 >
-                    <div></div>
+                    <video muted controls loop src={item.video} className="w-full h-full object-cover"></video>
                 </VideoModal>
             )}
         </>

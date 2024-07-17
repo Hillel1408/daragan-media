@@ -9,8 +9,8 @@ export default function Contacts({ className }: { className?: string }) {
                 </a>
             </li>
             <li>
-                <a href="tel:+7(414)850-0417" className="flex items-center gap-[7px]">
-                    <img src="images/icon-2.svg" alt="" width="15px" height="15px" className="translate-x-[1px]" /> +7 (414) 850 - 0417
+                <a href="tel:+7(980)394-92-46" className="flex items-center gap-[7px]">
+                    <img src="images/icon-2.svg" alt="" width="15px" height="15px" className="translate-x-[1px]" /> +7 (980) 394 - 92 - 46
                 </a>
             </li>
         </ul>

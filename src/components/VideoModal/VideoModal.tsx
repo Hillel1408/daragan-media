@@ -18,14 +18,16 @@ const VideoModal = ({ children, closeModal }: { children: JSX.Element; closeModa
                     )}
                     onClick={(e) => e.stopPropagation()}
                 >
-                    <div className="relative p-[50px] bg-[#d9d9d9] h-[calc(100%-100px)] w-[calc(100%-100px)] rounded-[24px] sm:w-full sm:h-[215px] sm:mx-5">
+                    <div className="relative bg-[#d9d9d9] h-[calc(100%-100px)] w-[calc(100%-100px)] rounded-[24px] overflow-hidden sm:w-full sm:h-[215px] sm:mx-5">
                         {children}
-                        <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                            <svg viewBox="0 0 128 128" className="w-[128px] h-[128px] sm:w-[83px] sm:h-[83px]">
-                                <ellipse opacity="0.2" cx="64.0972" cy="64.124" rx="63.4272" ry="63.425" fill="black" />
-                                <path d="M52.2598 86.145V42.1033L91.9341 63.912L52.2598 86.145Z" fill="white" />
-                            </svg>
-                        </button>
+                        {false && (
+                            <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                                <svg viewBox="0 0 128 128" className="w-[128px] h-[128px] sm:w-[83px] sm:h-[83px]">
+                                    <ellipse opacity="0.2" cx="64.0972" cy="64.124" rx="63.4272" ry="63.425" fill="black" />
+                                    <path d="M52.2598 86.145V42.1033L91.9341 63.912L52.2598 86.145Z" fill="white" />
+                                </svg>
+                            </button>
+                        )}
                     </div>
                     <button
                         className="absolute top-[29px] right-[29px]"

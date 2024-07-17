@@ -58,7 +58,7 @@ export default function Frontend() {
             title: t("LSAdmin1"),
             text: t("LSAdmin2"),
             href: "",
-            video: "1",
+            video: "video/video-1.mov",
         },
     ];
 
