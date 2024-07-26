@@ -1,8 +1,24 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SecondaryButton } from "components";
+import { sendMessage } from "api/telegram";
 
 export default function Feedback() {
+    const initialState = { name: "", phoneNumber: "" };
+
+    const [values, setValues] = useState(initialState);
+
     const { t } = useTranslation();
+
+    const onSubmit = async () => {
+        try {
+            const message = `Имя: ${values.name}, телефон: ${values.phoneNumber}`;
+            await sendMessage(message);
+            setValues(initialState);
+        } catch (e) {
+            console.log(e);
+        }
+    };
 
     return (
         <div className="feedback bg-[#111112] pb-[100px] md:pb-20 sm:pb-[70px]">
@@ -19,16 +35,24 @@ export default function Feedback() {
                             <input
                                 type="text"
                                 placeholder={t("Name")}
+                                value={values.name}
+                                onChange={(e) => {
+                                    setValues({ ...values, name: e.target.value });
+                                }}
                                 className="border border-white rounded-[32px] bg-[rgba(255,255,255,0.06)] opacity-90 h-[57px] px-6 placeholder:text-[16px]
                               placeholder:text-white placeholder:opacity-70 text-[16px] text-white"
                             />
                             <input
                                 type="tel"
                                 placeholder={t("PhoneNumber")}
+                                value={values.phoneNumber}
+                                onChange={(e) => {
+                                    setValues({ ...values, phoneNumber: e.target.value });
+                                }}
                                 className="border border-white rounded-[32px] bg-[rgba(255,255,255,0.06)] opacity-90 h-[57px] px-6 placeholder:text-[16px]
                               placeholder:text-white placeholder:opacity-70 text-[16px] text-white"
                             />
-                            <SecondaryButton text={t("Send")} />
+                            <SecondaryButton text={t("Send")} onClick={onSubmit} />
                         </div>
                     </div>
                     <img src="images/bg-1.svg" width="343" height="270" alt="" className="my-blur absolute top-[30px] left-[74px]" />

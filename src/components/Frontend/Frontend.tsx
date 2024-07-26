@@ -58,7 +58,7 @@ export default function Frontend() {
             title: t("LSAdmin1"),
             text: t("LSAdmin2"),
             href: "",
-            video: "video/video-1.mov",
+            video: "https://daragan-media.com/video/video-1.mov",
         },
     ];
 
