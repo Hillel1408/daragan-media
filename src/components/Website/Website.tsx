@@ -39,7 +39,7 @@ export default function Website() {
     return (
         <div className="flex flex-col gap-[70px] mt-[68px] md:mt-[36px] md:gap-[42px]">
             <Technologies text={t("Valid")} list={landingPageList}></Technologies>
-            <div className="grid gap-[66px] grid-cols-3 lg:grid-cols-2 md:gap-[30px] sm:grid-cols-1">
+            <div className="my-works grid gap-[66px] grid-cols-3 lg:grid-cols-2 md:gap-[30px] sm:grid-cols-1">
                 {projects.map((item, index) => (
                     <Observer key={index}>
                         <Project item={item} />

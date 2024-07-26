@@ -29,6 +29,7 @@ export default function Tabs({
                             key={index}
                             onClick={() => {
                                 setActiveTab(index);
+                                document.querySelector(".my-works")?.scrollIntoView({ behavior: "smooth" });
                             }}
                         >
                             {item}
