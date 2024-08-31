@@ -46,12 +46,12 @@ export default function Experience() {
         },
     ];
     return (
-        <div className="pb-[100px] bg-[#111112] md:pb-20 sm:pb-[64px] sm:overflow-hidden">
+        <div className="pb-[100px] bg-[#111112] md:pb-20 sm:pb-[64px]">
             <div className="container">
                 <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase text-center mb-8 sm:text-[28px]">Опыт работы</h2>
-                <div className="border-[#2B2B2D] border pt-[67px] px-[74px] pb-[71px] rounded-[37px] relative overflow-hidden md:py-[41px] md:pl-[26px] md:pr-[36px] sm:-mx-5 sm:rounded-none sm:pl-10 sm:overflow-visible">
+                <div className="border-[#2B2B2D] border pt-[67px] px-[74px] pb-[71px] rounded-[37px] relative overflow-hidden md:py-[41px] md:pl-[26px] md:pr-[36px] sm:-mx-5 sm:rounded-none sm:pl-10 sm:border-x-0 sm:overflow-visible sm:pl-0">
                     {list.map((item, index) => (
-                        <Observer key={index}>
+                        <Observer key={index} className2="pl-10">
                             <div className="grid grid-cols-[209px_1fr] relative z-20 md:grid-cols-[180px_1fr] sm:grid-cols-[1fr]">
                                 <p className="font-medium text-[18px] leading-[29px] text-white opacity-70 sm:hidden">
                                     {item.date[0]} — <br />
