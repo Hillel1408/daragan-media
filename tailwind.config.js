@@ -20,7 +20,7 @@ module.exports = {
                 },
                 body: {
                     fontFamily: '"Ubuntu", sans-serif',
-                    minWidth: "320px",
+                    minWidth: "380px",
                     lineHeight: "normal",
                 },
                 main: {

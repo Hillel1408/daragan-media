@@ -24,6 +24,7 @@ import VideoModal from "components/VideoModal/VideoModal";
 import Languages from "components/Languages/Languages";
 import MobileMenu from "components/MobileMenu/MobileMenu";
 import DiplomasText from "components/DiplomasText/DiplomasText";
+import Experience from "components/Experience/Experience";
 
 export {
     Header,
@@ -52,4 +53,5 @@ export {
     Languages,
     MobileMenu,
     DiplomasText,
+    Experience,
 };
