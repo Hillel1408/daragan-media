@@ -1,54 +1,57 @@
 import classNames from "classnames";
 import Observer from "components/Observer/Observer";
+import { useTranslation } from "react-i18next";
 
 export default function Experience() {
+    const { t } = useTranslation();
+
     const list = [
         {
             href: "https://webmobil-agency.ru/",
-            hrefText: "ООО ДВГ Проджект",
-            title: "Frontend-разработчик",
-            text: "Разрабатывал web-приложения на React / TypeScript с использованием Tailwind, подключенные к Rest API (в основном DRF). Выполнял верстку страниц приложений по разработанному дизайну",
-            stack: "Стек: HTML, Javascript, CSS, Typescript, React, Tailwind, SCSS, Mobx, Axios, Tanstack Query, API Django Rest Framework",
-            date: ["Август 2024", "По настоящее время"],
+            hrefText: t("DvgProject"),
+            title: t("DvgProject3"),
+            text: t("DvgProject4"),
+            stack: t("DvgProject5"),
+            date: [t("DvgProject1"), t("DvgProject2")],
         },
         {
             href: "#",
-            hrefText: "Фри-ланс",
-            title: "Frontend-разработчик",
-            text: "Выполнял проекты на фри-лансе, которые размещены в портфолио",
-            stack: "Стек: HTML5, CSS3, JavaScript, SASS, Tailwind, Pug, EJS, Gulp, Bootstrap, PerfectPixel, Figma, Photoshop, NextJS, React, TypeScript, Redux toolkit, RTK Query",
-            date: ["Февраль 2023", "Август 2024"],
+            hrefText: t("Freelancer"),
+            title: t("Freelancer3"),
+            text: t("Freelancer4"),
+            stack: t("Freelancer5"),
+            date: [t("Freelancer1"), t("Freelancer2")],
         },
         {
             href: "https://hawkingbros.com/",
-            hrefText: "hawkingbros",
-            title: "Frontend-разработчик",
-            text: "Стажировка. Работал над созданием сервиса по аренде жилья в Беларуси. Вошел в 5 лучших стажеров (из 400 изначально записавшихся).",
-            stack: "Стек: HTML5, SASS, NextJS, TypeScript, Redux toolkit",
-            date: ["Октябрь 2022", "Февраль 2023"],
+            hrefText: t("Hawkingbros"),
+            title: t("Hawkingbros3"),
+            text: t("Hawkingbros4"),
+            stack: t("Hawkingbros5"),
+            date: [t("Hawkingbros1"), t("Hawkingbros2")],
         },
         {
             href: "https://only.digital/",
-            hrefText: "only.digital",
-            title: "Frontend-разработчик",
-            text: "Стажировка. Работал над проектами https://github.com/Hillel1408/only-task4-nextjs и https://github.com/Hillel1408/only-template",
-            stack: "Стек: HTML5, SASS, NextJS, JavaScript, TypeScript",
-            date: ["Август 2022", "Октябрь 2022"],
+            hrefText: t("OnlyDigital"),
+            title: t("OnlyDigital3"),
+            text: t("OnlyDigital4"),
+            stack: t("OnlyDigital5"),
+            date: [t("OnlyDigital1"), t("OnlyDigital2")],
         },
 
         {
             href: "https://gb.ru/",
-            hrefText: "GeekBrains",
-            title: "Frontend-разработчик",
-            text: "Обучение на латформе GeekBrains.",
-            stack: "Стек: HTML5, CSS, JavaScript, React",
-            date: ["Июнь 2022", "Август 2022"],
+            hrefText: t("GeekBrains"),
+            title: t("GeekBrains3"),
+            text: t("GeekBrains4"),
+            stack: t("GeekBrains5"),
+            date: [t("GeekBrains1"), t("GeekBrains2")],
         },
     ];
     return (
         <div className="pb-[100px] bg-[#111112] md:pb-20 sm:pb-[64px]">
             <div className="container">
-                <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase text-center mb-8 sm:text-[28px]">Опыт работы</h2>
+                <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase text-center mb-8 sm:text-[28px]">{t("Experience")}</h2>
                 <div className="border-[#2B2B2D] border pt-[67px] px-[74px] pb-[71px] rounded-[37px] relative overflow-hidden md:py-[41px] md:pl-[26px] md:pr-[36px] sm:-mx-5 sm:rounded-none sm:border-x-0 sm:pl-0">
                     {list.map((item, index) => (
                         <Observer key={index} className2="pl-10">
