@@ -54,8 +54,8 @@ export default function Experience() {
                 <h2 className="font-['Intro'] text-[32px] leading-[154%] text-white uppercase text-center mb-8 sm:text-[28px]">{t("Experience")}</h2>
                 <div className="border-[#2B2B2D] border pt-[67px] px-[74px] pb-[71px] rounded-[37px] relative overflow-hidden md:py-[41px] md:pl-[26px] md:pr-[36px] sm:-mx-5 sm:rounded-none sm:border-x-0 sm:pl-0">
                     {list.map((item, index) => (
-                        <Observer key={index} className2="pl-10">
-                            <div className="grid grid-cols-[209px_1fr] relative z-20 md:grid-cols-[180px_1fr] sm:grid-cols-[1fr]">
+                        <Observer key={index} className2="pl-10 relative z-30">
+                            <div className="grid grid-cols-[209px_1fr] relative md:grid-cols-[180px_1fr] sm:grid-cols-[1fr]">
                                 <p className="font-medium text-[18px] leading-[29px] text-white opacity-70 sm:hidden">
                                     {item.date[0]} — <br />
                                     {item.date[1]}
