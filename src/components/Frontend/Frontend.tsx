@@ -60,6 +60,13 @@ export default function Frontend() {
             href: "",
             video: "https://daragan-media.com/video/video-1.mov",
         },
+        {
+            img: "img-35.png",
+            imgHover: "img-36.png",
+            title: t("Solidstack1"),
+            text: t("Solidstack2"),
+            href: "https://www.solidstack.so/",
+        },
     ];
 
     return (

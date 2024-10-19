@@ -55,6 +55,13 @@ export default function LandingPage() {
             text: t("MalyeEtazhi2"),
             href: "https://daragan-media.com/verstka/front_2/",
         },
+        {
+            img: "img-37.png",
+            imgHover: "img-38.png",
+            title: t("SwayOne1"),
+            text: t("SwayOne2"),
+            href: "https://sway-one.vercel.app/",
+        },
     ];
 
     return (

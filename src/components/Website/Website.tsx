@@ -34,6 +34,13 @@ export default function Website() {
             text: t("YourGranite2"),
             href: "https://hillel1408.github.io/granite/",
         },
+        {
+            img: "img-39.png",
+            imgHover: "img-40.png",
+            title: t("YourGranite1"),
+            text: t("YourGranite2"),
+            href: "https://hillel1408.github.io/monsense/",
+        },
     ];
 
     return (
