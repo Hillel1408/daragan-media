@@ -37,8 +37,8 @@ export default function Website() {
         {
             img: "img-39.png",
             imgHover: "img-40.png",
-            title: t("YourGranite1"),
-            text: t("YourGranite2"),
+            title: t("Monsense1"),
+            text: t("Monsense2"),
             href: "https://hillel1408.github.io/monsense/",
         },
     ];
