@@ -7,6 +7,14 @@ export default function Experience() {
 
     const list = [
         {
+            href: "https://terabit.ai/",
+            hrefText: t("Terabit"),
+            title: t("Terabit3"),
+            text: t("Terabit4"),
+            stack: t("Terabit5"),
+            date: [t("Terabit1"), t("Terabit2")],
+        },
+        {
             href: "https://webmobil-agency.ru/",
             hrefText: t("DvgProject"),
             title: t("DvgProject3"),

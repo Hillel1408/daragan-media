@@ -77,7 +77,7 @@
     "Experience": "Опыт работы",
     "DvgProject": "ООО ДВГ Проджект",
     "DvgProject1": "Август 2024",
-    "DvgProject2": "По настоящее время",
+    "DvgProject2": "Март 2025",
     "DvgProject3": "Frontend-разработчик",
     "DvgProject4": "Разрабатывал web-приложения на React / TypeScript с использованием Tailwind, подключенные к Rest API (в основном DRF). Выполнял верстку страниц приложений по разработанному дизайну",
     "DvgProject5": "Стек: HTML, Javascript, CSS, Typescript, React, Tailwind, SCSS, Mobx, Axios, Tanstack Query, API Django Rest Framework",
@@ -108,5 +108,11 @@
     "Monsense1": "Monsense",
     "Monsense2": "Адаптивная верстка сайта Monsense",
     "SwayOne1": "Sway One",
-    "SwayOne2": "Адаптивная верстка макета Sway One"
+    "SwayOne2": "Адаптивная верстка макета Sway One",
+    "terabit": "Terabit",
+    "Terabit1": "Март 2025",
+    "Terabit2": "По настоящее время",
+    "Terabit3": "Frontend-разработчик",
+    "Terabit4": "",
+    "Terabit5": "Стек: ReactJS, NextJS, VueJS, NuxtJS"
 }
